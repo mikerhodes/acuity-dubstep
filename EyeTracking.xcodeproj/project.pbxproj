@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		270AF5271893E64C00BD2DF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270AF5261893E64C00BD2DF1 /* Foundation.framework */; };
+		270AF5291893E64C00BD2DF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270AF5281893E64C00BD2DF1 /* CoreGraphics.framework */; };
+		270AF52B1893E64C00BD2DF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270AF52A1893E64C00BD2DF1 /* UIKit.framework */; };
+		270AF5311893E64C00BD2DF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 270AF52F1893E64C00BD2DF1 /* InfoPlist.strings */; };
+		270AF5331893E64C00BD2DF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 270AF5321893E64C00BD2DF1 /* main.m */; };
+		270AF5371893E64C00BD2DF1 /* MRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 270AF5361893E64C00BD2DF1 /* MRAppDelegate.m */; };
+		270AF53A1893E64C00BD2DF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270AF5381893E64C00BD2DF1 /* Main.storyboard */; };
+		270AF53D1893E64C00BD2DF1 /* MRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270AF53C1893E64C00BD2DF1 /* MRViewController.m */; };
+		270AF53F1893E64C00BD2DF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270AF53E1893E64C00BD2DF1 /* Images.xcassets */; };
+		270AF5461893E64C00BD2DF1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270AF5451893E64C00BD2DF1 /* XCTest.framework */; };
+		270AF5471893E64C00BD2DF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270AF5261893E64C00BD2DF1 /* Foundation.framework */; };
+		270AF5481893E64C00BD2DF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270AF52A1893E64C00BD2DF1 /* UIKit.framework */; };
+		270AF5501893E64C00BD2DF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 270AF54E1893E64C00BD2DF1 /* InfoPlist.strings */; };
+		270AF5521893E64C00BD2DF1 /* EyeTrackingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 270AF5511893E64C00BD2DF1 /* EyeTrackingTests.m */; };
+		27C5B75A1893EAB700584DCD /* MRAcuityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B7591893EAB700584DCD /* MRAcuityView.m */; };
+		27C5B75B1893EAB700584DCD /* MRAcuityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B7591893EAB700584DCD /* MRAcuityView.m */; };
+		27C5B7641894045100584DCD /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B75F1894045100584DCD /* UIImage+Alpha.m */; };
+		27C5B7651894045100584DCD /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B75F1894045100584DCD /* UIImage+Alpha.m */; };
+		27C5B7661894045100584DCD /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B7611894045100584DCD /* UIImage+Resize.m */; };
+		27C5B7671894045100584DCD /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B7611894045100584DCD /* UIImage+Resize.m */; };
+		27C5B7681894045100584DCD /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B7631894045100584DCD /* UIImage+RoundedCorner.m */; };
+		27C5B7691894045100584DCD /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B7631894045100584DCD /* UIImage+RoundedCorner.m */; };
+		27C5B76C18940FB600584DCD /* MRAcuityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B76B18940FB600584DCD /* MRAcuityModel.m */; };
+		27C5B76D18940FB600584DCD /* MRAcuityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B76B18940FB600584DCD /* MRAcuityModel.m */; };
+		27C5B76F1894287500584DCD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C5B76E1894287500584DCD /* AVFoundation.framework */; };
+		27C5B77218950AF700584DCD /* MRAcuityChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B77118950AF700584DCD /* MRAcuityChecker.m */; };
+		27C5B77318950AF700584DCD /* MRAcuityChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B77118950AF700584DCD /* MRAcuityChecker.m */; };
+		27C5B77618951E5C00584DCD /* Restricted.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C5B77518951E5C00584DCD /* Restricted.xcassets */; };
+		27C5B77718951E5C00584DCD /* Restricted.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27C5B77518951E5C00584DCD /* Restricted.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		270AF5491893E64C00BD2DF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 270AF51B1893E64C00BD2DF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 270AF5221893E64C00BD2DF1;
+			remoteInfo = EyeTracking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		270AF5231893E64C00BD2DF1 /* EyeTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyeTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		270AF5261893E64C00BD2DF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		270AF5281893E64C00BD2DF1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		270AF52A1893E64C00BD2DF1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		270AF52E1893E64C00BD2DF1 /* EyeTracking-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EyeTracking-Info.plist"; sourceTree = "<group>"; };
+		270AF5301893E64C00BD2DF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		270AF5321893E64C00BD2DF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		270AF5341893E64C00BD2DF1 /* EyeTracking-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyeTracking-Prefix.pch"; sourceTree = "<group>"; };
+		270AF5351893E64C00BD2DF1 /* MRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRAppDelegate.h; sourceTree = "<group>"; };
+		270AF5361893E64C00BD2DF1 /* MRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRAppDelegate.m; sourceTree = "<group>"; };
+		270AF5391893E64C00BD2DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		270AF53B1893E64C00BD2DF1 /* MRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRViewController.h; sourceTree = "<group>"; };
+		270AF53C1893E64C00BD2DF1 /* MRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MRViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		270AF53E1893E64C00BD2DF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		270AF5441893E64C00BD2DF1 /* EyeTrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeTrackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		270AF5451893E64C00BD2DF1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		270AF54D1893E64C00BD2DF1 /* EyeTrackingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EyeTrackingTests-Info.plist"; sourceTree = "<group>"; };
+		270AF54F1893E64C00BD2DF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		270AF5511893E64C00BD2DF1 /* EyeTrackingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EyeTrackingTests.m; sourceTree = "<group>"; };
+		27C5B7581893EAB700584DCD /* MRAcuityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAcuityView.h; sourceTree = "<group>"; };
+		27C5B7591893EAB700584DCD /* MRAcuityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAcuityView.m; sourceTree = "<group>"; };
+		27C5B75E1894045100584DCD /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		27C5B75F1894045100584DCD /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		27C5B7601894045100584DCD /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		27C5B7611894045100584DCD /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		27C5B7621894045100584DCD /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		27C5B7631894045100584DCD /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		27C5B76A18940FB600584DCD /* MRAcuityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAcuityModel.h; sourceTree = "<group>"; };
+		27C5B76B18940FB600584DCD /* MRAcuityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAcuityModel.m; sourceTree = "<group>"; };
+		27C5B76E1894287500584DCD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		27C5B77018950AF700584DCD /* MRAcuityChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAcuityChecker.h; sourceTree = "<group>"; };
+		27C5B77118950AF700584DCD /* MRAcuityChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAcuityChecker.m; sourceTree = "<group>"; };
+		27C5B77418950CCE00584DCD /* MRAcuityCheckerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRAcuityCheckerDelegate.h; sourceTree = "<group>"; };
+		27C5B77518951E5C00584DCD /* Restricted.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Restricted.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		270AF5201893E64C00BD2DF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C5B76F1894287500584DCD /* AVFoundation.framework in Frameworks */,
+				270AF5291893E64C00BD2DF1 /* CoreGraphics.framework in Frameworks */,
+				270AF52B1893E64C00BD2DF1 /* UIKit.framework in Frameworks */,
+				270AF5271893E64C00BD2DF1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270AF5411893E64C00BD2DF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270AF5461893E64C00BD2DF1 /* XCTest.framework in Frameworks */,
+				270AF5481893E64C00BD2DF1 /* UIKit.framework in Frameworks */,
+				270AF5471893E64C00BD2DF1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		270AF51A1893E64C00BD2DF1 = {
+			isa = PBXGroup;
+			children = (
+				270AF52C1893E64C00BD2DF1 /* EyeTracking */,
+				270AF54B1893E64C00BD2DF1 /* EyeTrackingTests */,
+				270AF5251893E64C00BD2DF1 /* Frameworks */,
+				270AF5241893E64C00BD2DF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		270AF5241893E64C00BD2DF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				270AF5231893E64C00BD2DF1 /* EyeTracking.app */,
+				270AF5441893E64C00BD2DF1 /* EyeTrackingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		270AF5251893E64C00BD2DF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27C5B76E1894287500584DCD /* AVFoundation.framework */,
+				270AF5261893E64C00BD2DF1 /* Foundation.framework */,
+				270AF5281893E64C00BD2DF1 /* CoreGraphics.framework */,
+				270AF52A1893E64C00BD2DF1 /* UIKit.framework */,
+				270AF5451893E64C00BD2DF1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		270AF52C1893E64C00BD2DF1 /* EyeTracking */ = {
+			isa = PBXGroup;
+			children = (
+				27C5B75C1894045100584DCD /* vendor */,
+				270AF5351893E64C00BD2DF1 /* MRAppDelegate.h */,
+				270AF5361893E64C00BD2DF1 /* MRAppDelegate.m */,
+				270AF5381893E64C00BD2DF1 /* Main.storyboard */,
+				270AF53B1893E64C00BD2DF1 /* MRViewController.h */,
+				270AF53C1893E64C00BD2DF1 /* MRViewController.m */,
+				270AF53E1893E64C00BD2DF1 /* Images.xcassets */,
+				270AF52D1893E64C00BD2DF1 /* Supporting Files */,
+				27C5B7581893EAB700584DCD /* MRAcuityView.h */,
+				27C5B7591893EAB700584DCD /* MRAcuityView.m */,
+				27C5B76A18940FB600584DCD /* MRAcuityModel.h */,
+				27C5B76B18940FB600584DCD /* MRAcuityModel.m */,
+				27C5B77018950AF700584DCD /* MRAcuityChecker.h */,
+				27C5B77118950AF700584DCD /* MRAcuityChecker.m */,
+				27C5B77418950CCE00584DCD /* MRAcuityCheckerDelegate.h */,
+				27C5B77518951E5C00584DCD /* Restricted.xcassets */,
+			);
+			path = EyeTracking;
+			sourceTree = "<group>";
+		};
+		270AF52D1893E64C00BD2DF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				270AF52E1893E64C00BD2DF1 /* EyeTracking-Info.plist */,
+				270AF52F1893E64C00BD2DF1 /* InfoPlist.strings */,
+				270AF5321893E64C00BD2DF1 /* main.m */,
+				270AF5341893E64C00BD2DF1 /* EyeTracking-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		270AF54B1893E64C00BD2DF1 /* EyeTrackingTests */ = {
+			isa = PBXGroup;
+			children = (
+				270AF5511893E64C00BD2DF1 /* EyeTrackingTests.m */,
+				270AF54C1893E64C00BD2DF1 /* Supporting Files */,
+			);
+			path = EyeTrackingTests;
+			sourceTree = "<group>";
+		};
+		270AF54C1893E64C00BD2DF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				270AF54D1893E64C00BD2DF1 /* EyeTrackingTests-Info.plist */,
+				270AF54E1893E64C00BD2DF1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27C5B75C1894045100584DCD /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				27C5B75D1894045100584DCD /* UIImageCategories */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		27C5B75D1894045100584DCD /* UIImageCategories */ = {
+			isa = PBXGroup;
+			children = (
+				27C5B75E1894045100584DCD /* UIImage+Alpha.h */,
+				27C5B75F1894045100584DCD /* UIImage+Alpha.m */,
+				27C5B7601894045100584DCD /* UIImage+Resize.h */,
+				27C5B7611894045100584DCD /* UIImage+Resize.m */,
+				27C5B7621894045100584DCD /* UIImage+RoundedCorner.h */,
+				27C5B7631894045100584DCD /* UIImage+RoundedCorner.m */,
+			);
+			path = UIImageCategories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		270AF5221893E64C00BD2DF1 /* EyeTracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270AF5551893E64C00BD2DF1 /* Build configuration list for PBXNativeTarget "EyeTracking" */;
+			buildPhases = (
+				270AF51F1893E64C00BD2DF1 /* Sources */,
+				270AF5201893E64C00BD2DF1 /* Frameworks */,
+				270AF5211893E64C00BD2DF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EyeTracking;
+			productName = EyeTracking;
+			productReference = 270AF5231893E64C00BD2DF1 /* EyeTracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		270AF5431893E64C00BD2DF1 /* EyeTrackingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270AF5581893E64C00BD2DF1 /* Build configuration list for PBXNativeTarget "EyeTrackingTests" */;
+			buildPhases = (
+				270AF5401893E64C00BD2DF1 /* Sources */,
+				270AF5411893E64C00BD2DF1 /* Frameworks */,
+				270AF5421893E64C00BD2DF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				270AF54A1893E64C00BD2DF1 /* PBXTargetDependency */,
+			);
+			name = EyeTrackingTests;
+			productName = EyeTrackingTests;
+			productReference = 270AF5441893E64C00BD2DF1 /* EyeTrackingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		270AF51B1893E64C00BD2DF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Small Text";
+				TargetAttributes = {
+					270AF5431893E64C00BD2DF1 = {
+						TestTargetID = 270AF5221893E64C00BD2DF1;
+					};
+				};
+			};
+			buildConfigurationList = 270AF51E1893E64C00BD2DF1 /* Build configuration list for PBXProject "EyeTracking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 270AF51A1893E64C00BD2DF1;
+			productRefGroup = 270AF5241893E64C00BD2DF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				270AF5221893E64C00BD2DF1 /* EyeTracking */,
+				270AF5431893E64C00BD2DF1 /* EyeTrackingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		270AF5211893E64C00BD2DF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C5B77618951E5C00584DCD /* Restricted.xcassets in Resources */,
+				270AF53F1893E64C00BD2DF1 /* Images.xcassets in Resources */,
+				270AF5311893E64C00BD2DF1 /* InfoPlist.strings in Resources */,
+				270AF53A1893E64C00BD2DF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270AF5421893E64C00BD2DF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C5B77718951E5C00584DCD /* Restricted.xcassets in Resources */,
+				270AF5501893E64C00BD2DF1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		270AF51F1893E64C00BD2DF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270AF5331893E64C00BD2DF1 /* main.m in Sources */,
+				27C5B76C18940FB600584DCD /* MRAcuityModel.m in Sources */,
+				270AF53D1893E64C00BD2DF1 /* MRViewController.m in Sources */,
+				27C5B7681894045100584DCD /* UIImage+RoundedCorner.m in Sources */,
+				27C5B75A1893EAB700584DCD /* MRAcuityView.m in Sources */,
+				27C5B77218950AF700584DCD /* MRAcuityChecker.m in Sources */,
+				27C5B7641894045100584DCD /* UIImage+Alpha.m in Sources */,
+				270AF5371893E64C00BD2DF1 /* MRAppDelegate.m in Sources */,
+				27C5B7661894045100584DCD /* UIImage+Resize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		270AF5401893E64C00BD2DF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C5B75B1893EAB700584DCD /* MRAcuityView.m in Sources */,
+				27C5B7691894045100584DCD /* UIImage+RoundedCorner.m in Sources */,
+				27C5B7671894045100584DCD /* UIImage+Resize.m in Sources */,
+				27C5B77318950AF700584DCD /* MRAcuityChecker.m in Sources */,
+				27C5B76D18940FB600584DCD /* MRAcuityModel.m in Sources */,
+				270AF5521893E64C00BD2DF1 /* EyeTrackingTests.m in Sources */,
+				27C5B7651894045100584DCD /* UIImage+Alpha.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		270AF54A1893E64C00BD2DF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 270AF5221893E64C00BD2DF1 /* EyeTracking */;
+			targetProxy = 270AF5491893E64C00BD2DF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		270AF52F1893E64C00BD2DF1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				270AF5301893E64C00BD2DF1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		270AF5381893E64C00BD2DF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				270AF5391893E64C00BD2DF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		270AF54E1893E64C00BD2DF1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				270AF54F1893E64C00BD2DF1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		270AF5531893E64C00BD2DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		270AF5541893E64C00BD2DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		270AF5561893E64C00BD2DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EyeTracking/EyeTracking-Prefix.pch";
+				INFOPLIST_FILE = "EyeTracking/EyeTracking-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		270AF5571893E64C00BD2DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EyeTracking/EyeTracking-Prefix.pch";
+				INFOPLIST_FILE = "EyeTracking/EyeTracking-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		270AF5591893E64C00BD2DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EyeTracking.app/EyeTracking";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EyeTracking/EyeTracking-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EyeTrackingTests/EyeTrackingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		270AF55A1893E64C00BD2DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EyeTracking.app/EyeTracking";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EyeTracking/EyeTracking-Prefix.pch";
+				INFOPLIST_FILE = "EyeTrackingTests/EyeTrackingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		270AF51E1893E64C00BD2DF1 /* Build configuration list for PBXProject "EyeTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270AF5531893E64C00BD2DF1 /* Debug */,
+				270AF5541893E64C00BD2DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		270AF5551893E64C00BD2DF1 /* Build configuration list for PBXNativeTarget "EyeTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270AF5561893E64C00BD2DF1 /* Debug */,
+				270AF5571893E64C00BD2DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		270AF5581893E64C00BD2DF1 /* Build configuration list for PBXNativeTarget "EyeTrackingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				270AF5591893E64C00BD2DF1 /* Debug */,
+				270AF55A1893E64C00BD2DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 270AF51B1893E64C00BD2DF1 /* Project object */;
+}
