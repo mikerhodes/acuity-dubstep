@@ -14,4 +14,6 @@
 
 @property (nonatomic,strong) IBOutlet MRAcuityView *acuityView;
 
+@property (nonatomic,strong) IBOutlet UILabel *statusLabel;
+
 @end

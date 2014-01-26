@@ -83,6 +83,7 @@
 
 // Create a new model, start the timer
 -(void)startTrials {
+    self.statusLabel.text = @"Starting...";
     self.model = [[MRAcuityModel alloc] initWithViewBounds:self.acuityView.bounds];
     [self startNSTimer];
 }
@@ -131,7 +132,10 @@
         // Did the current trial succeed?
         BOOL trialSucceeded = [self.checker trialCompleted];
         if (trialSucceeded) {
+            self.statusLabel.text = @"Success!";
             [self.model incrementRecognisedInCurrentSet];
+        } else {
+            self.statusLabel.text = @"Failure";
         }
 
         // If it was the final one trial in the set, check whether set
@@ -159,6 +163,7 @@
         self.isActiveTrial = NO;
 
     } else {  // Starting a trial
+        self.statusLabel.text = @"";
 
         // Move to next card
         [self.model increment];

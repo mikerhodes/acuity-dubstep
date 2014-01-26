@@ -19,6 +19,14 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yhb-wS-lZK" customClass="MRAcuityView">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Starting..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ats-cF-CYD">
+                                        <rect key="frame" x="92" y="427" width="585" height="169"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="128"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.69411764705882351" green="0.70196078431372544" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
@@ -28,6 +36,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="acuityView" destination="Yhb-wS-lZK" id="VM0-zh-mUn"/>
+                        <outlet property="statusLabel" destination="ats-cF-CYD" id="bHn-5O-YZw"/>
                         <segue destination="wJB-Yt-QCA" kind="push" identifier="ShowDiagnosis" id="tRW-le-qZp"/>
                     </connections>
                 </viewController>
