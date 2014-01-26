@@ -154,8 +154,8 @@
 				270AF5381893E64C00BD2DF1 /* Main.storyboard */,
 				270AF53B1893E64C00BD2DF1 /* MRViewController.h */,
 				270AF53C1893E64C00BD2DF1 /* MRViewController.m */,
-				270AF53E1893E64C00BD2DF1 /* Images.xcassets */,
-				270AF52D1893E64C00BD2DF1 /* Supporting Files */,
+				27B77A7D18952DC30078FE6E /* MRDiagnosisViewController.h */,
+				27B77A7E18952DC30078FE6E /* MRDiagnosisViewController.m */,
 				27C5B7581893EAB700584DCD /* MRAcuityView.h */,
 				27C5B7591893EAB700584DCD /* MRAcuityView.m */,
 				27C5B76A18940FB600584DCD /* MRAcuityModel.h */,
@@ -163,9 +163,9 @@
 				27C5B77018950AF700584DCD /* MRAcuityChecker.h */,
 				27C5B77118950AF700584DCD /* MRAcuityChecker.m */,
 				27C5B77418950CCE00584DCD /* MRAcuityCheckerDelegate.h */,
+				270AF53E1893E64C00BD2DF1 /* Images.xcassets */,
 				27C5B77518951E5C00584DCD /* Restricted.xcassets */,
-				27B77A7D18952DC30078FE6E /* MRDiagnosisViewController.h */,
-				27B77A7E18952DC30078FE6E /* MRDiagnosisViewController.m */,
+				270AF52D1893E64C00BD2DF1 /* Supporting Files */,
 			);
 			path = EyeTracking;
 			sourceTree = "<group>";
