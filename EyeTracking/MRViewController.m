@@ -22,6 +22,8 @@
 @property (nonatomic, strong) MRAcuityModel *model;
 @property (nonatomic, strong) MRAcuityChecker *checker;
 
+@property (nonatomic, strong) UITapGestureRecognizer *tapRecognizer;
+
 @property (nonatomic) BOOL isActiveTrial;
 
 @end
@@ -33,13 +35,19 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
     // We must retain this as initWithTarget:action: doesn't
     self.checker = [[MRAcuityChecker alloc] init];
 
-    UITapGestureRecognizer *singleFingerTap =
+    self.tapRecognizer =
     [[UITapGestureRecognizer alloc] initWithTarget:self.checker
                                             action:@selector(handleSingleTap:)];
-    [self.view addGestureRecognizer:singleFingerTap];
+    [self.view addGestureRecognizer:self.tapRecognizer];
 
     // Match acuityView's background to the Cardiff Cards image background
     self.acuityView.backgroundColor = [UIColor colorWithRed:177.0/255.0
@@ -48,7 +56,17 @@
                                                       alpha:1];
 
     [self startTrials];
+}
 
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [self stopNSTimer];
+
+    [self.view removeGestureRecognizer:self.tapRecognizer];
+    
+    self.tapRecognizer = nil;
+    self.checker = nil;
+    self.model = nil;
 }
 
 - (void)didReceiveMemoryWarning

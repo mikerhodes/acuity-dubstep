@@ -36,10 +36,10 @@
         self.imageIndex = -1;  // we alway increment in the first time through
 
         // Restricted image set
-//        self.images = @[@"Sock1", @"Sock2", @"Sock3", @"Sock4", @"Sock5"];
+        self.images = @[@"Sock1", @"Sock2", @"Sock3", @"Sock4", @"Sock5"];
 
         // Unrestricted images
-        self.images = @[@"Rabbit", @"Rabbit-50", @"Rabbit-70", @"Rabbit-90", @"Rabbit-95"];
+//        self.images = @[@"Rabbit", @"Rabbit-50", @"Rabbit-70", @"Rabbit-90", @"Rabbit-95"];
 
         // Each image has an associated diagnosis
         self.diagnoses = @[@"6/60", @"6/36", @"6/18", @"6/12", @"6/9"];
@@ -107,7 +107,7 @@
 }
 
 -(BOOL)trialSetSuccessful {
-    return self.recognisedInCurrentSet >= 2;
+    return self.recognisedInCurrentSet >= 1;
 }
 
 -(CGRect)currentBounds
