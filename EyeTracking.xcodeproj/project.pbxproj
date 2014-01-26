@@ -21,6 +21,8 @@
 		270AF5481893E64C00BD2DF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270AF52A1893E64C00BD2DF1 /* UIKit.framework */; };
 		270AF5501893E64C00BD2DF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 270AF54E1893E64C00BD2DF1 /* InfoPlist.strings */; };
 		270AF5521893E64C00BD2DF1 /* EyeTrackingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 270AF5511893E64C00BD2DF1 /* EyeTrackingTests.m */; };
+		27B77A7F18952DC30078FE6E /* MRDiagnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77A7E18952DC30078FE6E /* MRDiagnosisViewController.m */; };
+		27B77A8018952DC30078FE6E /* MRDiagnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B77A7E18952DC30078FE6E /* MRDiagnosisViewController.m */; };
 		27C5B75A1893EAB700584DCD /* MRAcuityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B7591893EAB700584DCD /* MRAcuityView.m */; };
 		27C5B75B1893EAB700584DCD /* MRAcuityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B7591893EAB700584DCD /* MRAcuityView.m */; };
 		27C5B7641894045100584DCD /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C5B75F1894045100584DCD /* UIImage+Alpha.m */; };
@@ -68,6 +70,8 @@
 		270AF54D1893E64C00BD2DF1 /* EyeTrackingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EyeTrackingTests-Info.plist"; sourceTree = "<group>"; };
 		270AF54F1893E64C00BD2DF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		270AF5511893E64C00BD2DF1 /* EyeTrackingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EyeTrackingTests.m; sourceTree = "<group>"; };
+		27B77A7D18952DC30078FE6E /* MRDiagnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDiagnosisViewController.h; sourceTree = "<group>"; };
+		27B77A7E18952DC30078FE6E /* MRDiagnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDiagnosisViewController.m; sourceTree = "<group>"; };
 		27C5B7581893EAB700584DCD /* MRAcuityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAcuityView.h; sourceTree = "<group>"; };
 		27C5B7591893EAB700584DCD /* MRAcuityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAcuityView.m; sourceTree = "<group>"; };
 		27C5B75E1894045100584DCD /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				27C5B77118950AF700584DCD /* MRAcuityChecker.m */,
 				27C5B77418950CCE00584DCD /* MRAcuityCheckerDelegate.h */,
 				27C5B77518951E5C00584DCD /* Restricted.xcassets */,
+				27B77A7D18952DC30078FE6E /* MRDiagnosisViewController.h */,
+				27B77A7E18952DC30078FE6E /* MRDiagnosisViewController.m */,
 			);
 			path = EyeTracking;
 			sourceTree = "<group>";
@@ -321,6 +327,7 @@
 				27C5B75A1893EAB700584DCD /* MRAcuityView.m in Sources */,
 				27C5B77218950AF700584DCD /* MRAcuityChecker.m in Sources */,
 				27C5B7641894045100584DCD /* UIImage+Alpha.m in Sources */,
+				27B77A7F18952DC30078FE6E /* MRDiagnosisViewController.m in Sources */,
 				270AF5371893E64C00BD2DF1 /* MRAppDelegate.m in Sources */,
 				27C5B7661894045100584DCD /* UIImage+Resize.m in Sources */,
 			);
@@ -335,6 +342,7 @@
 				27C5B7671894045100584DCD /* UIImage+Resize.m in Sources */,
 				27C5B77318950AF700584DCD /* MRAcuityChecker.m in Sources */,
 				27C5B76D18940FB600584DCD /* MRAcuityModel.m in Sources */,
+				27B77A8018952DC30078FE6E /* MRDiagnosisViewController.m in Sources */,
 				270AF5521893E64C00BD2DF1 /* EyeTrackingTests.m in Sources */,
 				27C5B7651894045100584DCD /* UIImage+Alpha.m in Sources */,
 			);

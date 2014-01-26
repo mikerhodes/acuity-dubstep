@@ -28,16 +28,64 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="acuityView" destination="Yhb-wS-lZK" id="VM0-zh-mUn"/>
+                        <segue destination="wJB-Yt-QCA" kind="push" identifier="ShowDiagnosis" id="tRW-le-qZp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1071" y="-839"/>
         </scene>
+        <!--Diagnosis View Controller-->
+        <scene sceneID="eAL-qv-yHR">
+            <objects>
+                <viewController id="wJB-Yt-QCA" customClass="MRDiagnosisViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JfB-3Z-lkK"/>
+                        <viewControllerLayoutGuide type="bottom" id="mfS-J5-Tgx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iNp-CI-G9r">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diagnosis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfz-yx-1NV">
+                                <rect key="frame" x="225" y="342" width="318" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxx-Qc-Ebq">
+                                <rect key="frame" x="212" y="442" width="345" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="82"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vv0-gT-3ey">
+                                <rect key="frame" x="295" y="711" width="178" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jwE-k1-r7b" kind="push" id="f1H-c7-YoZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xu4-aF-QtS"/>
+                    <connections>
+                        <outlet property="diagnosisLabel" destination="Oxx-Qc-Ebq" id="rJY-FQ-PPt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mem-fE-Wik" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2043" y="-839"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="g9z-dY-nEX">
             <objects>
-                <navigationController definesPresentationContext="YES" id="31n-Lz-8yw" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="31n-Lz-8yw" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y3I-g8-8yJ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -113,4 +161,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="f1H-c7-YoZ"/>
+    </inferredMetricsTieBreakers>
 </document>

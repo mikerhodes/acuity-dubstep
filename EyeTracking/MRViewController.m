@@ -11,6 +11,7 @@
 #import "MRAcuityView.h"
 #import "MRAcuityModel.h"
 #import "MRAcuityChecker.h"
+#import "MRDiagnosisViewController.h"
 
 // Time card is shown, and between trials
 #define INTERVAL 2.0
@@ -90,6 +91,14 @@
     return YES;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"ShowDiagnosis"]) {
+        MRDiagnosisViewController *vc = (MRDiagnosisViewController*)segue.destinationViewController;
+        vc.diagnosis = self.model.currentDiagnosis;
+    }
+}
+
 #pragma mark UI update NSTimer
 
 -(void)startNSTimer {
@@ -133,14 +142,15 @@
 
             if (!self.model.trialSetSuccessful) {  // if set failed, register that's the case
                 [self stopNSTimer];
-                NSString *msg = [NSString stringWithFormat:@"Rating: %@", self.model.currentDiagnosis];
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:msg
-                                                                message:nil
-                                                               delegate:nil
-                                                      cancelButtonTitle:@"Restart"
-                                                      otherButtonTitles:nil];
-                alert.delegate = self;
-                [alert show];
+//                NSString *msg = [NSString stringWithFormat:@"Rating: %@", self.model.currentDiagnosis];
+//                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:msg
+//                                                                message:nil
+//                                                               delegate:nil
+//                                                      cancelButtonTitle:@"Restart"
+//                                                      otherButtonTitles:nil];
+//                alert.delegate = self;
+//                [alert show];
+                [self performSegueWithIdentifier:@"ShowDiagnosis" sender:self];
             }
         }
 
